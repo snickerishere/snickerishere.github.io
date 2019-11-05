@@ -5,29 +5,45 @@
 		
 	</head>
 	<body>
-	<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">First example with text surrounded by a red border.<br>This example also has multiple lines.</p>
+
+	<style>
+	div {
+  	background-color: lightgrey;
+  	width: 300px;
+  	border: 15px solid green;
+  	padding: 50px;
+  	margin: 20px;
+	}
+	</style>
+	<div> You like my webpage? <br>
+		It VeRy CoOl<br>
+	<div>
 		
-	<button type="button" onclick="
+	<button type="button" onclick="TheGuess()">epic guessing number game here</button>
+	<script> 
+	function TheGuess() {
 		var rnum = Math.floor(Math.random()* Math.floor(10));  
 		var guess = prompt("enter your guess here","8");
 		if (guess == rnum)
 		 {
-    			console.out("here's the number");
-    			console.out(rnum);
-    			console.out("damn you got it, here's your prize.");
+    			alert("congrats you got it! have some imaginary self validation!");
     
 		 } 
 		else
  		 {
-    			console.out("here's the number");
-    			console.out(rnum);
-    			console.out("lol get good scrub");
+    			alert("lol you suck, wrong number try again")
 		 }
-				       
-				       ">Click Me!</button>
 	
-
-
+	}
+	</script>
+	<h2>YoU LikE GAmes?</h2>
+	<style>
+	body {
+  	background-image: url('https://pbs.twimg.com/profile_images/1176244650316709888/WboHRHLw.jpg');
+	}
+	</style>
+	
+	
 	
 	</body>
 </html>
