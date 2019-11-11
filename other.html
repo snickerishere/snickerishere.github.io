@@ -130,12 +130,22 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
+function SpacePressed() {
+    document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        accelerate(0.5) //your code
+    }
+    else {
+        accelerate(-0.2)
+    }
+}
+    
 </script>
 <br>
 <button onmouseup="startGame()">START</button>
-<p>Use the ACCELERATE button to stay in the air</p>
+<p>Use the SPACE button to stay in the air</p>
 <p>How long can you stay alive?</p>
-<p>and no I didn't cose this, that was an example on w3school. now it's not plaigerism i think...</p>
+<p>also no I didn't code this, that was an example on w3school. now it's not plaigerism i think...</p>
 </body>
 </html>
 
