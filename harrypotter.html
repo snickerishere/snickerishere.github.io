@@ -7,21 +7,20 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
 var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-var stx = c.getContext("2d");
-var ftx = c.getContext("2d");
-var ltx = c.getContext("2d");
-var lrx = c.getContext("2d");
-
-ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.stroke();
-stx.beginPath();
-stx.arc(85, 65, 13, 0, 2 * Math.PI);
-stx.stroke();
-ftx.beginPath();
-ftx.arc(120, 65, 13, 0, 2 * Math.PI);
-ftx.stroke();
+var face = c.getContext("2d");
+var rglass = c.getContext("2d");
+var lglass = c.getContext("2d");
+var bridge = c.getContext("2d");
+var mouth = c.getContext("2d");
+face.beginPath();
+face.arc(100, 75, 50, 0, 2 * Math.PI);
+face.stroke();
+rglass.beginPath();
+rglass.arc(85, 65, 13, 0, 2 * Math.PI);
+rglass.stroke();
+lglass.beginPath();
+lglass.arc(120, 65, 13, 0, 2 * Math.PI);
+lglass.stroke();
 ltx.beginPath();
 ltx.moveTo(98,65);
 ltx.lineTo(107,65);
